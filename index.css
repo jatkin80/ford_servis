@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
+body {
+   font-family:'Arimo', sans-serif;
+
+}
+
 header {
   display: flex;
   flex-direction: row;
     padding: 20px 48px;
   color: hsl(215, 98%, 24%);
   background-color: hsl(0, 0%, 100%);
-  font-family:'Arimo', sans-serif;
- align-items: center;
+  align-items: center;
  font-size: 14px;
  }
 
@@ -31,7 +35,7 @@ a {
   
 }
 
-.action {
+.register {
 display: 2 1 0;
 }
 
@@ -40,9 +44,6 @@ display: 2 1 0;
   flex-flow: row nowrap;
 
 }
-
-
-
 
 
 #logo {
@@ -56,5 +57,21 @@ max-height: 40px;
   display: inline-block;
   margin-right: 5px;
 }
+
+footer {
+
+display: flex;
+background-color: hsl(215, 98%, 24%);
+color: hsl(0, 0%, 100%);
+
+
+}
+
+.footer-nav {
+  display: grid
+  grid-template-columns
+}
+
+
 
 
