@@ -25,10 +25,9 @@ header {
 
 
 
-a {
+header a {
   text-decoration: none;
   color: inherit;
-
   margin-left: 20px;
 }
 
@@ -43,9 +42,7 @@ a {
 
 }
 
-.register {
-  display: 2 1 0;
-}
+
 
 .primary-navigation>ul {
   display: inline-flex;
@@ -62,6 +59,7 @@ a {
 }
 
 #register {
+
   display: inline-block;
   margin-right: 5px;
 }
@@ -121,7 +119,7 @@ h2 {
 
 #photo-grid img {
   max-width: 15em;
-  border: 1px gray solid;
+  box-shadow: 1px 2px 5px gray;
 
 }
 
@@ -134,8 +132,9 @@ h2 {
 
 .hilight img {
   max-width: 35em;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   align-self: center;
+  box-shadow: 1px 2px 5px gray;
 }
 
 
@@ -158,6 +157,7 @@ h2 {
   margin: 10px 20%;
   align-items: center;
   padding-bottom: 50px;
+
 }
 
 
@@ -165,6 +165,7 @@ h2 {
   max-width: 20em;
   align-self: center;
   line-height: 1;
+  box-shadow: 1px 2px 5px gray;
 
 }
 
@@ -179,43 +180,93 @@ h2 {
 .footer-nav {
 
   display: flex;
-  background-color: hsl(215, 98%, 24%);
+  background-color: hsl(208, 77%, 16%);
   color: hsl(0, 0%, 100%);
+  justify-content: flex-start;
+  flex-basis: 100%;
+  padding: 20px;
 }
+
+#left-nav {
+  display: flex;
+
+  justify-content: flex-start;
+  flex: 1 1 50%;
+}
+
+#left-nav img {
+  background: transparent;
+}
+
+
+
+
 
 .nav-menu {
+  flex: 1 1 20%;
   display: flex;
+
+  justify-content: space-between;
+  align-content: flex-start;
 }
 
-.nav-menu h4 {
-  padding-bottom: 10px;
-  text-align: center;
+h5 {
+  margin-bottom: 20 px;
 }
 
-.nav-menu li {}
+
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+
 
 .actions {
   display: flex;
   flex-direction: column;
+  flex: 1 1 10%;
   justify-content: flex-start;
+  align-items: flex-end;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-align: justify;
 }
 
 .footer-2 {
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
-  font-size: 8px;
+  font-size: 12px;
+  flex-basis: 100%;
 }
 
-.footer-2 li {
-  font-size: 12px;
+#copyright {
+  align-self: flex-start;
+  flex-basis: 50%;
 }
+
+
 
 footer {
 
   padding: 20px 48px;
 }
 
-#social-links {
-  display: flex;
+#social {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  flex-basis: 50%;
+justify-content: flex-end;
+font-size: 16px;
+}
+
+#social > ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-self: stretch;
+}
+
+#social li {
+  padding-left: 15px;
 }
