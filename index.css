@@ -16,7 +16,7 @@ header {
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
-  color: hsl(215, 98%, 24%);
+  color: hsl(208, 77%, 16%);
   background-color: hsl(0, 0%, 100%);
   align-items: center;
   font-size: 14px;
@@ -85,10 +85,10 @@ a {
 }
 
 h2 {
-  
+
   font-size: 34px;
   line-height: 40px;
- 
+
   align-self: center;
   color: hsl(215, 98%, 24%);
 }
@@ -140,10 +140,10 @@ h2 {
 
 
 #story {
- 
+
   margin: 20px;
   padding: 7px 18%;
- 
+
 
 }
 
@@ -157,7 +157,7 @@ h2 {
   flex-wrap: wrap;
   margin: 10px 20%;
   align-items: center;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
 
 
