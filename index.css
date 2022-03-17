@@ -176,7 +176,7 @@ h1, h2 {
 }
 
 .hilight img {
-  max-width: 35em;
+  max-width: 35vh;
 
   align-self: center;
   box-shadow: 1px 2px 5px gray;
@@ -222,7 +222,7 @@ h1, h2 {
 
 
 .testimonial img {
-  max-width: 20em;
+  max-width: 20vh;
   align-self: center;
   line-height: 1;
   box-shadow: 1px 2px 5px gray;
@@ -234,7 +234,7 @@ h1, h2 {
   font-size: 20px;
   line-height: 1.15;
   color: hsl(215, 98%, 24%);
-  margin-bottom: .7em;
+  margin-bottom: 1em;
 }
 
 .footer-nav {
