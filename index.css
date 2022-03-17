@@ -1,53 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Krub:wght@300&display=swap');
 
-body {
 
-  margin: 20px;
+body {
+  font-family: 'Krub', sans-serif;
+  margin: 20px 20px;
   color: hsl(215, 98%, 24%);
   margin-left: 15px;
-  background-color: hsl(0, 0%, 97%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 main {
-  font-family: 'Krub', sans-serif;
   margin: 20px 20px;
   color: hsl(240, 5%, 29%);
 }
 
 header {
+display: flex;
+flex-basis: 100%;
+justify-content: center;
+
+}
+
+.nav {
   display: flex;
+  flex-basis: 92%;
   flex-direction: row;
   text-transform: uppercase;
   color: hsl(208, 77%, 16%);
-  background-color: hsl(0, 0%, 97%);
+  background-color: hsl(0, 0%, 100%);
   align-items: center;
   font-size: 18px;
-  margin: 15px 10px;
-  font-family: 'Krub', sans-serif;
+  margin: 0px 10px;
   font-weight: 600;
-
+  padding: 15px 15px;
+  box-shadow: 1px 2px 5px hsl(0, 0%, 95%);
+  text-transform: uppercase;
 }
 
+#logo {
+  max-height: 40px;
+  background-color: inherit;
 
 
-header a {
-  text-decoration: none;
-  color: inherit;
-  margin-left: 20px;
 }
 
 .meta {
-  flex: 1 1 0
+  flex: 1 1 15%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
 .primary-navigation {
   display: inline-block;
-  flex: 1 1 0;
+  flex: 1 1 40%;
 
 }
-
-
 
 .primary-navigation>ul {
   display: inline-flex;
@@ -55,18 +67,52 @@ header a {
 
 }
 
+.primary-navigation a {
+  color: inherit;
+  margin-left: 20px;
+}
 
-#logo {
-  max-height: 40px;
-  background-color: inherit;
-  display: inline-block;
+.actions>a {
+  width: 5em;
+  border: 0;
+  border-radius: 0.3em;
+  color: hsl(208, 77%, 16%);
+  background: hsl(0, 0%, 97%);
+  font-size: 16px;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.3em 2em;
+  margin: 0.25em;
+  box-shadow: 1px 2px 5px gray;
+  text-transform: uppercase;
 
 }
 
-#register {
+.nav .actions {
+  flex: 0 1 5%;
+}
 
-  display: inline-block;
-  margin-right: 5px;
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.nav a:hover {
+  color: hsl(208, 74%, 39%);
+}
+
+h1, h2 {
+
+  font-size: 34px;
+  line-height: 40px;
+  font-family: 'Arimo', sans-serif;
+  align-self: center;
+  color: hsl(215, 98%, 24%);
+  text-align: center;
 }
 
 .pitch {
@@ -78,59 +124,18 @@ header a {
 
 }
 
-.button {
-  width: 136px;
-  border: 0;
-  border-radius: 0.3em;
-  background: hsl(208, 77%, 16%);
-  color: hsl(0, 0%, 97%);
-  font-family: 'Krub', sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 0.3em 2em;
-  margin: 0.25rem;
-  cursor: pointer;
-  box-shadow: 1px 2px 5px gray;
-  text-transform: uppercase;
-}
-
- a:link {
-  color: inherit;
-}
-
- a:visited {
-  color: inherit;
-}
-
-header a:hover {
-  color: hsl(208, 74%, 39%);
+.left-menu, .hilight, .testimonial {
+  padding: 1.5vh;
+  box-shadow: 1px 2px 5px hsl(0, 0%, 95%);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .left-menu {
   display: flex;
   flex-basis: 45%;
   justify-content: space-around;
-
   flex-wrap: wrap;
-
-}
-
-h1 h2 {
-
-  font-size: 34px;
-  line-height: 40px;
-  font-family: 'Arimo', sans-serif;
-  align-self: center;
-  color: hsl(215, 98%, 24%);
-  text-align: center;
-}
-
-#pitch-head h3 {
-  font-size: 20px;
-  line-height: 1.35;
-  margin: auto 10%;
 }
 
 #pitch-head {
@@ -141,20 +146,24 @@ h1 h2 {
   flex-wrap: wrap;
 }
 
-
+#pitch-head h3 {
+  font-size: 20px;
+  line-height: 1.35;
+  margin: auto 10%;
+}
 
 #photo-grid {
   display: flex;
   flex-basis: 100%;
   justify-content: space-evenly;
   align-items: center;
-
   flex-wrap: wrap;
   margin-left: 5px;
+
 }
 
 #photo-grid img {
-  max-width: 15em;
+  max-width: 25vh;
   box-shadow: 1px 2px 5px gray;
 
 }
@@ -163,16 +172,27 @@ h1 h2 {
   display: flex;
   flex-basis: 45%;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
 }
 
 .hilight img {
   max-width: 35em;
-  margin-bottom: 20px;
+
   align-self: center;
   box-shadow: 1px 2px 5px gray;
+
 }
 
+.hilight h2 {
+  padding-top: 5vh;
+}
+
+#hilight-box, #testimonial-box, #photo-grid {
+  padding: 1.5vh;
+  box-shadow: 1px 2px 5px hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+
+}
 
 #story {
 
@@ -196,6 +216,7 @@ h1 h2 {
   align-items: center;
   padding-bottom: 50px;
   font-family: 'Arimo', sans-serif;
+  
 
 }
 
@@ -213,12 +234,10 @@ h1 h2 {
   font-size: 20px;
   line-height: 1.15;
   color: hsl(215, 98%, 24%);
+  margin-bottom: .7em;
 }
 
-
-
 .footer-nav {
-
   display: flex;
   color: hsl(0, 0%, 97%);
   background-color: hsl(208, 77%, 16%);
@@ -229,7 +248,6 @@ h1 h2 {
 
 #left-nav {
   display: flex;
-
   justify-content: flex-start;
   flex: 1 1 50%;
 }
@@ -245,6 +263,7 @@ h1 h2 {
   line-height: 1.2;
   justify-content: space-between;
   align-content: flex-start;
+  margin: 5px 20px;
 }
 
 h5 {
@@ -252,23 +271,19 @@ h5 {
   font-weight: 600;
 }
 
-
-
-.nav-menu a {
-  text-decoration: none;
+.footer-nav>.actions {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 5%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 10px;
 }
 
 
-
-.actions {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 10%;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-right: 20px;
-  padding-top: 10px;
-
+.footer-nav .actions>a {
+  color: hsl(208, 77%, 16%);
+  background: hsl(0, 0%, 97%);
 }
 
 .footer-2 {
@@ -277,7 +292,8 @@ h5 {
   margin-top: 12px;
   font-size: 16px;
   flex-basis: 100%;
-  color: hsl(240, 5%, 29%);
+  color: hsl(208, 77%, 16%);
+  background-color: hsl(0, 0%, 95%);
 }
 
 #copyright {
@@ -288,19 +304,6 @@ h5 {
   width: 50px;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-footer {
-  margin: 5px 20px;
-  font-family: 'Krub', sans-serif;
-}
 
 #social {
   display: inline-flex;
@@ -315,7 +318,7 @@ footer {
   display: inline-flex;
   flex-flow: row nowrap;
   align-self: stretch;
-  text-decoration: none;
+
 }
 
 #social li {
@@ -323,20 +326,10 @@ footer {
 
 }
 
-.button_footer {
-  width: 136px;
-  border: 0;
-  border-radius: 0.3em;
-  color: hsl(208, 77%, 16%);
-  background: hsl(0, 0%, 97%);
-  font-family: 'Krub', sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-  white-space: nowrap;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
   text-decoration: none;
-  padding: 0.3em 2em;
-  margin: 0.25rem;
-  cursor: pointer;
-  box-shadow: 1px 2px 5px gray;
-  text-transform: uppercase;
 }
